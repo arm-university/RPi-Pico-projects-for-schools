@@ -1,4 +1,4 @@
-# Rpi-Pico-projects-for-schools
+# RPi-Pico-projects-for-schools
 
 ## [Download here](https://github.com/arm-university/Rpi-Pico-projects-for-schools/archive/refs/heads/main.zip)
 
