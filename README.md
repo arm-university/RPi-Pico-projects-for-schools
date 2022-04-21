@@ -3,11 +3,30 @@
 ## [Download here](https://github.com/arm-university/Rpi-Pico-projects-for-schools/archive/refs/heads/main.zip)
 
 ## Resource Aim
+This book guides learners through a range of projects, contextualised by cutting-edge themes including Machine Learning and Internet of Things. All projects are based on the Raspberry Pi Pico board, a cheap yet powerful device, which can be programmed in Python. 
 
 ## Learning Outcomes
-  
+- To explore artificial intelligence and machine learning techniques 
+- To program a Pico using Python  
+- To use and apply code from Github 
+- To understand and apply Computer Science theory such as finite state machines and two’s complement 
+- To use internet services to push data to visualisation services for interrogation  
+- To learn and apply Computer Science techniques and theory using Jupyter notebooks 
+- To use a HuskyLens to respond to facial recognition triggers  
+- To build a full physical device to solve a real-world problem 
+
 ## Resource structure
-The micro:course is a series of individual projects that build in complexity.
+The book is separated into distinct projects that introduce concepts and techniques required to achieve the projects goals. The projects build in complexity. 
+
+1. Getting Started  – this project introduces the Pico and all the hardware and applications needed  
+2. Displaying Environmental Data – this project introduces data collection, storage and display 
+3. Analysing Environmental Data – this project introduces Jupyter notebooks and data analysis  
+4. The I in IoT – this project connects up the various elements needed for an IoT network 
+5. Data Science for managing well-being – this project captures physical data and interrogates the data to make assertions and predictions regarding well-being 
+6. Accessing data remotely – this project looks at how IoT technology can be used in Operational Technology in your home 
+7. Experimenting with Physics – this projects measure ‘time of flight’ and building a model from the data 
+8. Security starts at home – this project introduces facial recognition concepts and techniques using HuskyLens 
+9. Bringing it all together – this is the capstone project where learners build an automated bird feeder that identifies and deters squirrels 
 
 ## License
 You are free to fork or clone this material. See [Licence.md](https://github.com/arm-university/Rpi-Pico-projects-for-schools/blob/main/Licence.md "Title") for the complete license.
