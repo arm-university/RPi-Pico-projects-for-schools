@@ -12,7 +12,7 @@ This book guides learners through a range of projects, contextualised by cutting
 - To understand and apply Computer Science theory such as finite state machines and two’s complement 
 - To use internet services to push data to visualisation services for interrogation  
 - To learn and apply Computer Science techniques and theory using Jupyter notebooks 
-- To use a HuskyLens to respond to facial recognition triggers  
+- To use a vision sensor to respond to facial recognition triggers  
 - To build a full physical device to solve a real-world problem 
 
 ## Resource structure
@@ -25,7 +25,7 @@ The book is separated into distinct projects that introduce concepts and techniq
 5. Data Science for managing well-being – this project captures physical data and interrogates the data to make assertions and predictions regarding well-being 
 6. Accessing data remotely – this project looks at how IoT technology can be used in Operational Technology in your home 
 7. Experimenting with Physics – this projects measure ‘time of flight’ and building a model from the data 
-8. Security starts at home – this project introduces facial recognition concepts and techniques using HuskyLens 
+8. Security starts at home – this project introduces facial recognition concepts and techniques
 9. Bringing it all together – this is the capstone project where learners build an automated bird feeder that identifies and deters squirrels 
 
 ## License
