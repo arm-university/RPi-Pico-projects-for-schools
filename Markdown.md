@@ -3,7 +3,7 @@
 
 Arm Education Media is an imprint of Arm Limited, 110 Fulbourn Road, Cambridge, CBI 9NJ, UK
 
-Copyright 2022 Arm Limited (or its affiliates). All rights reserved.
+Copyright &copy; 2022 Arm Limited (or its affiliates). All rights reserved.
 
 No part of this publication may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording or any other information storage and retrieval system, without permission in writing from the publisher, except under the following conditions:
 
