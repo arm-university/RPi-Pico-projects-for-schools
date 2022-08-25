@@ -3,7 +3,7 @@
 
 Arm Education Media is an imprint of Arm Limited, 110 Fulbourn Road, Cambridge, CBI 9NJ, UK
 
-Copyright © 2022 Arm Limited (or its affiliates). All rights reserved.
+Copyright ï¿½ 2022 Arm Limited (or its affiliates). All rights reserved.
 
 No part of this publication may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording or any other information storage and retrieval system, without permission in writing from the publisher, except under the following conditions:
 
@@ -22,9 +22,9 @@ Readers must always rely on their own experience and knowledge in evaluating and
 
 To the fullest extent permitted by law, the publisher and the authors, contributors, and editors shall not have any responsibility or liability for any losses, liabilities, claims, damages, costs or expenses resulting from or suffered in connection with the use of the information and materials set out in this textbook.
 
-Such information and materials are protected by intellectual property rights around the world and are copyright © Arm Limited (or its affiliates). All rights are reserved. Any source code, models or other materials set out in this reference book should only be used for non-commercial, educational purposes (and/or subject to the terms of any license that is specified or otherwise provided by Arm). In no event shall purchasing this textbook be construed as granting a license to use any other Arm technology or know-how.
+Such information and materials are protected by intellectual property rights around the world and are copyright ï¿½ Arm Limited (or its affiliates). All rights are reserved. Any source code, models or other materials set out in this reference book should only be used for non-commercial, educational purposes (and/or subject to the terms of any license that is specified or otherwise provided by Arm). In no event shall purchasing this textbook be construed as granting a license to use any other Arm technology or know-how.
 
-The Arm corporate logo and words marked with <sup>®</sup> or ™ are registered trademarks or trademarks of Arm Limited (or its affiliates) in the US and/or elsewhere. All rights reserved. Other brands and names mentioned in this document may be the trademarks of their respective owners. For more information about Arm's trademarks, please visit **<https://www.arm.com/company/policies/trademarks>**.
+The Arm corporate logo and words marked with <sup>ï¿½</sup> or ï¿½ are registered trademarks or trademarks of Arm Limited (or its affiliates) in the US and/or elsewhere. All rights reserved. Other brands and names mentioned in this document may be the trademarks of their respective owners. For more information about Arm's trademarks, please visit **<https://www.arm.com/company/policies/trademarks>**.
 
 Arm is committed to making the language we use inclusive, meaningful, and respectful. Our goal is to remove and replace non-inclusive language from our vocabulary to reflect our values and represent our global ecosystem.
 
@@ -52,7 +52,7 @@ Learners will also explore some Artificial Intelligence and Machine Learning tec
 
 ## Understanding the Raspberry Pi Pico
 
-Learners often see microcontrollers such as the Pico as delicate, confusing, and scary. While there are elements of delicacy to the Pico, such as the pins being easy to bend, learners should be encouraged not to fear it. It helps to think about the Pico—and any microcontroller—simply as a small computer: all it does is take inputs, calculate the right thing to do, and produce some outputs.
+Learners often see microcontrollers such as the Pico as delicate, confusing, and scary. While there are elements of delicacy to the Pico, such as the pins being easy to bend, learners should be encouraged not to fear it. It helps to think about the Picoï¿½and any microcontrollerï¿½simply as a small computer: all it does is take inputs, calculate the right thing to do, and produce some outputs.
 
 The fact that we use sensors instead of keyboards and mice, and we use LEDs and motors rather than a screen, should not detract from this. Sometimes these inputs will come from external sources such as the HuskyLens and sometimes the storage will be remote, but learners will be walked through this in accessible steps.
 
@@ -82,9 +82,9 @@ To this end, this chapter will introduce you to programming the Pi Pico in Pytho
 
 ### 1
 
-One of the main differences between a microcontroller and a computer is you can program a computer by typing a program into it through an _integrated development environment (IDE)_—a tool that combines all your development tools under a common interface—and running it directly, but you can't type a program directly into a microcontroller. Instead, we need to use some sort of intermediary—in this case we will use our computer and an IDE, Thonny, to program the Pico with a Python interpreter and then the IDE to interact with the Pico from the computer.
+One of the main differences between a microcontroller and a computer is you can program a computer by typing a program into it through an _integrated development environment (IDE)_ï¿½a tool that combines all your development tools under a common interfaceï¿½and running it directly, but you can't type a program directly into a microcontroller. Instead, we need to use some sort of intermediaryï¿½in this case we will use our computer and an IDE, Thonny, to program the Pico with a Python interpreter and then the IDE to interact with the Pico from the computer.
 
-Thonny can be downloaded from **<https://thonny.org/>**— install the latest version available. Thonny will work on Windows, Mac, Linux, or even on a standard Raspberry Pi.
+Thonny can be downloaded from **<https://thonny.org/>**ï¿½ install the latest version available. Thonny will work on Windows, Mac, Linux, or even on a standard Raspberry Pi.
 
 ![007_01](/images/007_01.png)
 
@@ -98,7 +98,7 @@ When in BOOTSEL mode, you can click on the Python version at the bottom of the T
 
 ![007_04](/images/007_04.png)
 
-![007_05](/images/007_05.png)
+
 
 ### 2
 
@@ -127,12 +127,12 @@ ___
 
 **PRO _TIP_**
 
-**Don't worry if you forget to use utime instead of time—MicroPython will use the right one anyway.**
+**Don't worry if you forget to use utime instead of timeï¿½MicroPython will use the right one anyway.**
 ____
 
 - The **machine** import gives Python access to the Pico. **utime** works very similarly to the **time** module in desktop Python, and in this case we will use it to "pause" execution.
 - We set constants for **ON** and **OFF** to aid readability of the code.
-- We also set constants for the LED pin (the on-board LED is connected to pin 25) and the delay we want between flashes—in this case 2 (seconds).
+- We also set constants for the LED pin (the on-board LED is connected to pin 25) and the delay we want between flashesï¿½in this case 2 (seconds).
 - We create a **Pin** object called **led** which we define as an **OUT** pin (for output) and tell it to use pin 25.
 - We then enter a forever loop (**while True**) and turn the **led** value to **ON**, sleep for 2 seconds, **OFF**, sleep for 2 seconds, then repeat.
 ___
@@ -150,7 +150,7 @@ The little LED built into the Pico isn't going to do much good as a bedside ligh
 
 The columns of holes (e.g. the blue, orange, and red lines) are joined together underneath with a conductive strip; this allows us to connect the legs of components by just pushing them into connected holes. The columns either side of the middle "split" (in yellow) are not connected so we can actually connect quite a few components!
 
-The Pico outputs at 3.3 V. However, an LED may struggle with such a voltage and may need a small resistor to reduce the voltage. (If you think about the electricity as water flowing down a pipe, _voltage_ is like the pressure of the water. If something gets in the way, such as a radiator, the water pressure will reduce. Similarly, if something gets in the way of the flow of the electricity, in this case a resistor, then the voltage will be reduced.) Omitting the resistor at best can reduce the lifespan of the LED, and at worst can actually cause a fire. By using the datasheet of the LEDs you buy you can calculate the ideal resistor for your LED at 3.3 V. However, you may not have these details so for this project we will use a 220 O resistor—this is more than sufficient. Power will flow from the GPIO pin (use pin 0, labelled as "GP0" on the Explorer board) into the LED anode (the long leg), out of the LED cathode (the short leg), through the resistor and back to ground. Changing the LED pin from 25 to 0 is the only code change you should need to make. Electricity flows from positive (provided by the GPIO pin in this case) to ground (often shortened to GND). Every circuit needs a return path to ground.
+The Pico outputs at 3.3 V. However, an LED may struggle with such a voltage and may need a small resistor to reduce the voltage. (If you think about the electricity as water flowing down a pipe, _voltage_ is like the pressure of the water. If something gets in the way, such as a radiator, the water pressure will reduce. Similarly, if something gets in the way of the flow of the electricity, in this case a resistor, then the voltage will be reduced.) Omitting the resistor at best can reduce the lifespan of the LED, and at worst can actually cause a fire. By using the datasheet of the LEDs you buy you can calculate the ideal resistor for your LED at 3.3 V. However, you may not have these details so for this project we will use a 220 O resistorï¿½this is more than sufficient. Power will flow from the GPIO pin (use pin 0, labelled as "GP0" on the Explorer board) into the LED anode (the long leg), out of the LED cathode (the short leg), through the resistor and back to ground. Changing the LED pin from 25 to 0 is the only code change you should need to make. Electricity flows from positive (provided by the GPIO pin in this case) to ground (often shortened to GND). Every circuit needs a return path to ground.
 ___
 
 **PRO _TIP_**
@@ -162,9 +162,9 @@ ____
 
 ### 5
 
-Our smart lighting still has some problems, however; the Pico is run from USB, which gives it a maximum of 3.3 V and (more importantly) 500 mA (half an amp). Components run at certain voltages, so the Pico pushes 3.3 V (and we reduce it with resistors if needed), but the current (amps) is the payload. A component such as an LED will draw as much current as it needs to operate, and if it can't get enough, then it won't operate. The Pico already uses a chunk of the available current and the Pico Explorer board will use a chunk more—meaning that we are not going to have a tremendous amount of current left to run our LEDs.
+Our smart lighting still has some problems, however; the Pico is run from USB, which gives it a maximum of 3.3 V and (more importantly) 500 mA (half an amp). Components run at certain voltages, so the Pico pushes 3.3 V (and we reduce it with resistors if needed), but the current (amps) is the payload. A component such as an LED will draw as much current as it needs to operate, and if it can't get enough, then it won't operate. The Pico already uses a chunk of the available current and the Pico Explorer board will use a chunk moreï¿½meaning that we are not going to have a tremendous amount of current left to run our LEDs.
 
-We can use a transistor—one of the most important inventions of the 20th century—to allow us to connect up our LEDs to an external power supply. In this project we are using an NPN transistor, coded PN2222A. A transistor joins an external power supply running through its collector pin, via anything it needs to power, and back to ground via its emitter pin. Normally this circuit is disconnected but if it receives a small current on its base pin it will make the connection and allow the (larger) power to flow. This means we can power an external LED from an external power source when the Pico tells us to, but without using lots of the current available to the Pico from the USB connection.
+We can use a transistorï¿½one of the most important inventions of the 20th centuryï¿½to allow us to connect up our LEDs to an external power supply. In this project we are using an NPN transistor, coded PN2222A. A transistor joins an external power supply running through its collector pin, via anything it needs to power, and back to ground via its emitter pin. Normally this circuit is disconnected but if it receives a small current on its base pin it will make the connection and allow the (larger) power to flow. This means we can power an external LED from an external power source when the Pico tells us to, but without using lots of the current available to the Pico from the USB connection.
 
 In this case we will use a 9 V battery for the external power source. Connect the red wire (positive) from the 9 V battery clip to the anode (long) leg of another external LED, and the cathode (short) leg of the LED via a resistor to the collector pin of the transistor. The resistor value should really be calculated but you can search for "normal" ranges on the Internet. An ultrabright blue LED will need about 290 O so we used 470 O to be safe on our normal green LED. If you don't have a high enough value, you can connect multiple lower values (such as 2 x 200 O resistors) together end to end.
 ___
@@ -181,7 +181,7 @@ ___
 
 **PRO _TIP_**
 
-**The PN2222A transistor will allow you to transfer a maximum of 1 A—this will run a decent number of LEDs but it will need to be cooled using a heatsink to run at that level for any time. If you need to run more power hungry devices, such as more LEDs, motors, fans and the like, it would be worth exploring more capable (and larger/more expensive) transistors or even some more capable devices called MOSFETs which often allow higher currents.**
+**The PN2222A transistor will allow you to transfer a maximum of 1 Aï¿½this will run a decent number of LEDs but it will need to be cooled using a heatsink to run at that level for any time. If you need to run more power hungry devices, such as more LEDs, motors, fans and the like, it would be worth exploring more capable (and larger/more expensive) transistors or even some more capable devices called MOSFETs which often allow higher currents.**
 ____
 
 ### 6
@@ -190,7 +190,6 @@ A flashing LED is of course pretty useless as an opportunity for us to replace o
 
 ![012_01](/images/012_01.png)
 
-![012_02](/images/012_02.png)
 
 This code will set up a timer for the LED to be on when the button is pressed. Let's explore the code:
 
@@ -215,7 +214,7 @@ It is easy to miscount times when you are using a countdown timer. Use a stopwat
 
 **Final thoughts**
 
-LEDs are far more efficient than traditional light bulbs because they use a lot less power to produce a similar amount of light. The light output of a bulb is measured in Lumens, with a normal old-fashioned 60 W incandescent bulb giving out approximately 840 Lumens. Watts is a measurement of how much energy is being used—1 W is 1 joule per second—a 60 W bulb uses 1/2 amp of current at 120 V (U.S. system) or about 1/4 amp at 230 V (British system). For comparison, an equivalent LED bulb might give out approximately 800 Lumens, almost the same, but uses only 13 W—less than a quarter of the power. Not only is the lower power production good for your bank balance and the environment, but there is also far less wastage with a traditional bulb lasting on average 0.9 years and the equivalent LED bulb lasting nearly 23 years! For us to reach Global Goal 11, we need to use less energy and what we do use needs to last longer than it does now.
+LEDs are far more efficient than traditional light bulbs because they use a lot less power to produce a similar amount of light. The light output of a bulb is measured in Lumens, with a normal old-fashioned 60 W incandescent bulb giving out approximately 840 Lumens. Watts is a measurement of how much energy is being usedï¿½1 W is 1 joule per secondï¿½a 60 W bulb uses 1/2 amp of current at 120 V (U.S. system) or about 1/4 amp at 230 V (British system). For comparison, an equivalent LED bulb might give out approximately 800 Lumens, almost the same, but uses only 13 Wï¿½less than a quarter of the power. Not only is the lower power production good for your bank balance and the environment, but there is also far less wastage with a traditional bulb lasting on average 0.9 years and the equivalent LED bulb lasting nearly 23 years! For us to reach Global Goal 11, we need to use less energy and what we do use needs to last longer than it does now.
 
 ____
 
@@ -267,10 +266,10 @@ Let's explore the code:
 - The imports include time (for the delay between readings), the BME68x breakout (there are other chips in the family with similar names) and the Pimoroni I2C interface.
 - The pins used by the Explorer to connect to I2C are defined (SDA and SCL, 20 and 21 respectively). If you turn your Explorer base upside down you can see these identified.
 - The I2C and the BME are created with the necessary parameters.
-- A continual loop is created, and looped once per second. Within this the BME680 is read (which produces a tuple) and the readings that are wanted are stored in variables. Storing a value to**_** means we will not look at that value—the BME provides some things we don't need.
+- A continual loop is created, and looped once per second. Within this the BME680 is read (which produces a tuple) and the readings that are wanted are stored in variables. Storing a value to**_** means we will not look at that valueï¿½the BME provides some things we don't need.
 - The readings are output to screen.
 
-![016_02](/images/016_02.png)
+
 
 ### 3
 
@@ -297,7 +296,7 @@ ___
 
 **PRO _TIP_**
 
-**Pimoroni's GitHub repository has an example called noise.py which will show you how to play a variety of sounds—and in fact a whole song—on the Pimoroni buzzer.**
+**Pimoroni's GitHub repository has an example called noise.py which will show you how to play a variety of sounds (and in fact a whole song) on the Pimoroni buzzer.**
 ____
 
 ### 5
@@ -315,7 +314,7 @@ It is likely that your readings will be fairly stable. There is nearly always a 
 - Alter the code so that the screen turns blue at a given cold temperature and red at a hot temperature. What you choose as hot and cold will of course vary depending on what you are used to!
 - Capture a press of **Button A** and start keeping an average gas quality reading from that point until you press **Button B**. Record this along with your memory test results.
 - When the warning buzzer is sounding, allow **Button X** to silence it. Ensure it will not sound for the next three minutes, but will then start sounding again if the air quality is still low.
-- Explore other ways you could adjust air quality—where could you put your sensor that is likely to have better or lower air quality than where you are working?
+- Explore other ways you could adjust air quality. Where could you put your sensor that is likely to have better or lower air quality than where you are working?
 
 **Final thoughts**
 
@@ -342,7 +341,7 @@ This exploration of environment data in large data sets allows data scientists t
 
 ### 1
 
-The Pico has a small amount of on-board memory (2 MB). If you want to log large amounts of data you might like to explore an external SD card module (although this may make attaching the sensor a bit harder at this point)—this will be described in future modules.
+The Pico has a small amount of on-board memory (2 MB). If you want to log large amounts of data you might like to explore an external SD card module (although this may make attaching the sensor a bit harder at this point)ï¿½this will be described in future modules.
 
 However, as we are storing relatively small amounts of data we will restrict ourselves to the on-board flash memory. The code below concatenates the sensor data into a single string, adds a new line, and writes it to a text file called **environment.csv**.
 
@@ -364,7 +363,7 @@ ____
 
 ### 2
 
-The file you create is stored on the internal flash memory which isn't immediately available to your computer (even if you boot up in BOOTSEL mode). Luckily Thonny comes with a handy tool to be able to access the file. If you select the **View** menu there is a **Files** option. When you select this you will see a files list come up on the left-hand side of your screen. The image shows this in Thonny. You can right-click the **environment.csv** file and **Download to…** your home directory (and then copy it wherever you need it).
+The file you create is stored on the internal flash memory which isn't immediately available to your computer (even if you boot up in BOOTSEL mode). Luckily Thonny comes with a handy tool to be able to access the file. If you select the **View** menu there is a **Files** option. When you select this you will see a files list come up on the left-hand side of your screen. The image shows this in Thonny. You can right-click the **environment.csv** file and **Download toï¿½** your home directory (and then copy it wherever you need it).
 
 ![022_01](/images/022_01.png)
 ___
@@ -402,7 +401,6 @@ A single column can be extracted using its name as a list index:
 
 ![024_04](/images/024_04.png)
 
-![024_05](/images/024_05.png)
 
 Pandas has a **describe** function which gives us a lot of useful information about our data:
 
@@ -410,7 +408,7 @@ Pandas has a **describe** function which gives us a lot of useful information ab
 
 ### 5
 
-Often visualizing data is one of the best ways of seeing what is happening. We can use the library MatPlotLib—a specialist library for data visualization—to plot the data. It first needs importing:
+Often visualizing data is one of the best ways of seeing what is happening. We can use the library MatPlotLibï¿½a specialist library for data visualizationï¿½to plot the data. It first needs importing:
 
 ![025_02](/images/025_02.png)
 
@@ -447,7 +445,7 @@ Data often includes outliers and rogue values. This can be from power surges, as
 
 ____
 
-# 4. THE "I" IN IOT
+# 4. The "I" in IoT
 
 ## Setting the scene
 
@@ -465,7 +463,7 @@ In this chapter we will be re-visiting the BME680 sensor, but looking at ways th
 
 ### 1
 
-The Pico is a tremendously powerful device and is remarkably cheap. One way the price has been kept so low, however, is by not having any on-board network connectivity. This is fine for as long as the Pico is plugged into your computer, but once you have unplugged it the only way to retrieve data is to plug it back in again. Handily there is a wireless pack available which you can plug straight into your Pico and which even comes with an additional micro-SD card slot and an RGB LED (red–green–blue light-emitting diode). Less helpfully this also blocks all of the header pins on the Pico (unless you added them yourself and used the extra-long ones) so you can't connect your BME680. We have used a dual expander to double up the GPIO pins, meaning we can have the WiFi card on one side and the BME680 plugged into the other side.
+The Pico is a tremendously powerful device and is remarkably cheap. One way the price has been kept so low, however, is by not having any on-board network connectivity. This is fine for as long as the Pico is plugged into your computer, but once you have unplugged it the only way to retrieve data is to plug it back in again. Handily there is a wireless pack available which you can plug straight into your Pico and which even comes with an additional micro-SD card slot and an RGB LED (red green blue light-emitting diode). Less helpfully this also blocks all of the header pins on the Pico (unless you added them yourself and used the extra-long ones) so you can't connect your BME680. We have used a dual expander to double up the GPIO pins, meaning we can have the WiFi card on one side and the BME680 plugged into the other side.
 
 ![029_01](/images/029_01.png)
 
@@ -484,9 +482,9 @@ Now we need to connect to the WiFi and make sure we can access a website.
 Let's explore the code:
 
 - We can't guarantee access to the ppwhttp library as it's not built into MicroPython, so we make sure you've remembered (and done it properly).
-- We set up the constants we use—the port (80 for HTTP), host (name of the website and path to the address of the resource within the website).
-- We create a handler, which is a function that will be called with the results of the request. Within this we check the status—"200 OK" means it worked and we have a web page, anything else (or no status) means we have a problem and need to check it out.
-- Outside of the handler we have used the on-board RGB LED as a status indicator (as we have no screen)—we connect to the WiFi (this holds on to the program until it's connected), tell it to use Google's DNS to look up IP addresses, and then activate the request. The color scheme is blue when starting, red if the connection fails and green if it works ok.
+- We set up the constants we useï¿½the port (80 for HTTP), host (name of the website and path to the address of the resource within the website).
+- We create a handler, which is a function that will be called with the results of the request. Within this we check the statusï¿½"200 OK" means it worked and we have a web page, anything else (or no status) means we have a problem and need to check it out.
+- Outside of the handler we have used the on-board RGB LED as a status indicator (as we have no screen)ï¿½we connect to the WiFi (this holds on to the program until it's connected), tell it to use Google's DNS to look up IP addresses, and then activate the request. The color scheme is blue when starting, red if the connection fails and green if it works ok.
 
 It is worth noting we have included two hosts, one commented out. <Google.com> insists on HTTPS so tries to redirect you. This doesn't work, so we will get a failed response. The other host, <api.thingspeak.com,> is the one we will be using later. This accepts insecure HTTP requests, so it should work ok and give you a green light!
 ___
@@ -524,15 +522,15 @@ It is worth noting that by default only the last 60 readings are shown, which at
 
 ### 5
 
-ThingSpeak is associated with MATLAB—a programming language which is built into the platform and allows us to do some (if we wish, very complex) data analysis. For now, we will look at the temperature data and how that varied overnight. From your channel you will need to create a MATLAB visualization and choose no starter code.
+ThingSpeak is associated with MATLABï¿½a programming language which is built into the platform and allows us to do some (if we wish, very complex) data analysis. For now, we will look at the temperature data and how that varied overnight. From your channel you will need to create a MATLAB visualization and choose no starter code.
 
 ![033_01](/images/033_01.png)
 
 You can see the code has a few stark differences to Python! Comments start with a **%** and lines end with a **;** for a start. Let's walk through the code:
 
-- We set up some values—the channel and API keys and the date/times we're interested in (note we shifted back an hour as the data was collected in GMT but is stored as UTC).
+- We set up some valuesï¿½the channel and API keys and the date/times we're interested in (note we shifted back an hour as the data was collected in GMT but is stored as UTC).
 - Data is then pulled into **data**, **time**, and **channelInfo** variables and the data is separated for the four sensor values.
-- **isnan** (is not a number) is used to remove any empty values—a little bit of rough data cleansing.
+- **isnan** (is not a number) is used to remove any empty valuesï¿½a little bit of rough data cleansing.
 - Smoothed data and trend lines are created.
 - Finally, a plot is shown with the original, smoothed, and trend-lines shown on a plot.
 
@@ -544,17 +542,17 @@ ___
 
 **Testing**
 
-This project takes some time to test fully. It is worth leaving the sensor for a good period of time—possibly even a full 24 hours. It is also worth experimenting with different areas. Closed doors, room occupancy, proximity to a shower—all will affect the variations you will see and the more test data you have the more you can learn.
+This project takes some time to test fully. It is worth leaving the sensor for a good period of timeï¿½possibly even a full 24 hours. It is also worth experimenting with different areas. Closed doors, room occupancy, proximity to a showerï¿½all will affect the variations you will see and the more test data you have the more you can learn.
 
 **Stretch tasks**
 
 - Add MATLAB analysis visualizations for the other sensors and compare the variations.
 - Collect data from different locations: the kitchen, near the bathroom, near a doorway, and a quiet room would all give different changes. Write up your conclusions from the plots.
-- Explore the examples from MATLAB—particularly the weather station—consider what other data analysis you could use within your own projects.
+- Explore the examples from MATLABï¿½particularly the weather stationï¿½consider what other data analysis you could use within your own projects.
 
 **Final thoughts**
 
-Variations in sensor readings can be incredibly useful. Spikes (up or down) in temperatures could indicate times when either the heating or the air conditioning is turning on—both of which use huge amounts of gas or electricity. Could you educate your family on the benefits of keeping doors closed (or windows open)? You could add a buzzer to encourage you to open a window rather than letting the air conditioning turn on automatically. Air conditioning— just in terms of power usage (and ignoring the potentially damaging coolant)—has a huge impact on the environment. During a recent heatwave 50% of the power usage in Beijing was running air conditioning units. Saving power, whether it is heating or cooling, can have an enormous impact on the use of fossil fuels and the impact of generating electricity upon the environment, working toward developing Global Goal 13, Climate action and encouraging Global Goal 7, Clean energy.
+Variations in sensor readings can be incredibly useful. Spikes (up or down) in temperatures could indicate times when either the heating or the air conditioning is turning onï¿½both of which use huge amounts of gas or electricity. Could you educate your family on the benefits of keeping doors closed (or windows open)? You could add a buzzer to encourage you to open a window rather than letting the air conditioning turn on automatically. Air conditioningï¿½ just in terms of power usage (and ignoring the potentially damaging coolant)ï¿½has a huge impact on the environment. During a recent heatwave 50% of the power usage in Beijing was running air conditioning units. Saving power, whether it is heating or cooling, can have an enormous impact on the use of fossil fuels and the impact of generating electricity upon the environment, working toward developing Global Goal 13, Climate action and encouraging Global Goal 7, Clean energy.
 
 ____
 
@@ -576,9 +574,9 @@ In this chapter you will be introduced to a number of new techniques including c
 
 ### 1
 
-This project will need to capture two kinds of data: digital data from the button presses to indicate which social media site you have been using, and analog data so that you can dial in how **much** time you have been on them for. We explored capturing button presses in an earlier chapter, but handling analog data directly is new to us (although the sensors we have used previously report analog data, this has been abstracted by the libraries that handle them). We will use a potentiometer—or pot for short—which has a positive voltage (red) and a ground (black) connected to either end, and a signal wire (blue) (normally from the center terminal) which varies depending on how far around the potentiometer is turned.
+This project will need to capture two kinds of data: digital data from the button presses to indicate which social media site you have been using, and analog data so that you can dial in how **much** time you have been on them for. We explored capturing button presses in an earlier chapter, but handling analog data directly is new to us (although the sensors we have used previously report analog data, this has been abstracted by the libraries that handle them). We will use a potentiometerï¿½or pot for shortï¿½which has a positive voltage (red) and a ground (black) connected to either end, and a signal wire (blue) (normally from the center terminal) which varies depending on how far around the potentiometer is turned.
 
-_Digital data_, or discrete values, are all that computers really understand. _Binary_ is the ultimate digital data, as it can be in only two states, but any data which "jumps" between values is discrete and therefore can be represented directly in digital format. _Analog data_ is continuous. The temperature may start off at 20 degrees and then move to 21 degrees, but it has to go via every infinitesimally small value on its way—there is no way it can jump. This continuous data is a bit tricky for computers—an infinite number of "steps" cannot be recorded, so the computer has to use an analog-to-digital converter (ADC) to approximate it as closely as possible.
+_Digital data_, or discrete values, are all that computers really understand. _Binary_ is the ultimate digital data, as it can be in only two states, but any data which "jumps" between values is discrete and therefore can be represented directly in digital format. _Analog data_ is continuous. The temperature may start off at 20 degrees and then move to 21 degrees, but it has to go via every infinitesimally small value on its wayï¿½there is no way it can jump. This continuous data is a bit tricky for computersï¿½an infinite number of "steps" cannot be recorded, so the computer has to use an analog-to-digital converter (ADC) to approximate it as closely as possible.
 
 ![037_01](/images/037_01.png)
 
@@ -586,7 +584,7 @@ Note we have left the audio jumper connected as we will be using this later in t
 
 ![037_05](/images/037_05.png)
 
-![037_03](/images/037_03.png)
+
 
 We can extend this to also check whether a button has been pressed:
 
@@ -650,7 +648,7 @@ Using **data.column_name.value_counts()** shows us how many times we did, or did
 
 ![042_02](/images/042_02.png)
 
-![042_03](/images/042_03.png)
+
 
 To see how each of the three compares to how much time we spent on social media, we first need to add a total to see how many platforms we were using.
 
@@ -660,13 +658,13 @@ We can then plot them together to look for some correlations:
 
 ![043_02](/images/043_02.png)
 
-So, it does look as if the number of social media platforms we were on increases with the amount of time we spent on social media. We can also create a new DataFrame (the data structure that holds the data—a bit like a spreadsheet table) based on certain criteria from the existing DataFrame. For example, when we select only data where the time spent on social media is more than 13 (so pretty much all of the time we had), we see:
+So, it does look as if the number of social media platforms we were on increases with the amount of time we spent on social media. We can also create a new DataFrame (the data structure that holds the dataï¿½a bit like a spreadsheet table) based on certain criteria from the existing DataFrame. For example, when we select only data where the time spent on social media is more than 13 (so pretty much all of the time we had), we see:
 
 ![044_01](/images/044_01.png)
 
-So, what conclusions can we draw from our data? Well—we spend too much time on social media. We searched our data for high usage periods and found there is no particular platform which is eating all of our time, so we're changing between the three quite a lot.
+So, what conclusions can we draw from our data? Wellï¿½we spend too much time on social media. We searched our data for high usage periods and found there is no particular platform which is eating all of our time, so we're changing between the three quite a lot.
 
-When looking at data it is important to either form a hypothesis and test it (we could have believed we spend too much time—where too much is more than a quarter—on social media, or that we spend most of our time on YouTube), or to look for correlations or lack of correlations. What is really important is to not try and force conclusions where there is insufficient evidence.
+When looking at data it is important to either form a hypothesis and test it (we could have believed we spend too much timeï¿½where too much is more than a quarterï¿½on social media, or that we spend most of our time on YouTube), or to look for correlations or lack of correlations. What is really important is to not try and force conclusions where there is insufficient evidence.
 
 ___
 
@@ -686,7 +684,7 @@ When testing, a 15 minute wait time is quite a lot. You can reduce the time down
 
 Our test data was completed on a day off, which explains the quite incredibly high usage of social media. While this is enjoyable, regular overuse could potentially have deep social and psychological impacts and have a negative impact upon your mental well-being. Pay careful attention to the conclusions you are able to form and consider whether you may need to make adjustments so that you can look after your health while still enjoying the use of social media, doing your own bit to meet Global Goal 3.
 
-Another interesting point can come out of this project, and that is one of e-waste. In 2019 it was estimated that over 50 million metric tonnes of e-waste was produced worldwide. Although our potentiometer came from a kit, you can often find such things in old toys and radios—a bit of creative de-soldering can produce an array of reusable components. Do be careful though, and don't touch anything you don't understand; even a small capacitor can store a charge and give you a shock!
+Another interesting point can come out of this project, and that is one of e-waste. In 2019 it was estimated that over 50 million metric tonnes of e-waste was produced worldwide. Although our potentiometer came from a kit, you can often find such things in old toys and radiosï¿½a bit of creative de-soldering can produce an array of reusable components. Do be careful though, and don't touch anything you don't understand; even a small capacitor can store a charge and give you a shock!
 
 ____
 
@@ -696,7 +694,7 @@ ____
 
 Many areas suffer from water shortages, not just in extreme climates but even more moderate ones. The need for clean, drinkable water is universal and a Global Goal. Hosepipe bans and water shortages are common across England in the summer months and Lake Mead hit all-time lows in 2021 leading to water shortages across the western United States.
 
-One of the worst culprits of water waste resides in the smallest room in the house—the humble lavatory can flush away as much as 35 gallons a day **per person**—and that's not including the amount that is wasted by leaky lavs—the 5–8% of toilets that leak waste another 100 gallons a day **each**_._ In this project we're going to use an accelerometer to monitor flushes and turn our devices into IoT devices to enable us to access data remotely. Knowledge is power and supporting more sustainable water usage directly supports Global Goal 6 in the sustainable management of water and sanitation.
+One of the worst culprits of water waste resides in the smallest room in the houseï¿½the humble lavatory can flush away as much as 35 gallons a day **per person**ï¿½and that's not including the amount that is wasted by leaky lavsï¿½the 5ï¿½8% of toilets that leak waste another 100 gallons a day **each**_._ In this project we're going to use an accelerometer to monitor flushes and turn our devices into IoT devices to enable us to access data remotely. Knowledge is power and supporting more sustainable water usage directly supports Global Goal 6 in the sustainable management of water and sanitation.
 
 ## Success criteria
 
@@ -712,7 +710,7 @@ This project makes use of the LSM303D, a 3-axis accelerometer which measures acc
 
 ![046_01](/images/046_01.png)
 
-Unlike the BME680 sensor we used in an earlier chapter, the LSM303D has one minor problem: at the time of writing, the libraries are not included with the custom firmware from Pimoroni; this may change in future. It is possible to install them separately, but we have taken the lightweight approach of doing things directly. This involves a number of steps. Firstly, as it's an I2C device, we can just connect the wires up to the normal I2C pins (the Explorer board actually has these on the back of it): we put SDA to 20 and SCL to 21. The 3 V and ground also need connecting to the + and - on the Pico. **Pin** and **I2C** will need to be imported from the machine library, as the builtin I2C libraries won't work for us. The **I2C** function sets up the pins and the maximum frequency for the clock but, after that, things get more complex. We need to refer to the datasheet for the LSM303D—which you can find via your favorite search engine or via a link from the GitHub repository.
+Unlike the BME680 sensor we used in an earlier chapter, the LSM303D has one minor problem: at the time of writing, the libraries are not included with the custom firmware from Pimoroni; this may change in future. It is possible to install them separately, but we have taken the lightweight approach of doing things directly. This involves a number of steps. Firstly, as it's an I2C device, we can just connect the wires up to the normal I2C pins (the Explorer board actually has these on the back of it): we put SDA to 20 and SCL to 21. The 3 V and ground also need connecting to the + and - on the Pico. **Pin** and **I2C** will need to be imported from the machine library, as the builtin I2C libraries won't work for us. The **I2C** function sets up the pins and the maximum frequency for the clock but, after that, things get more complex. We need to refer to the datasheet for the LSM303Dï¿½which you can find via your favorite search engine or via a link from the GitHub repository.
 
 To enable the accelerometer's _x_-, _y_-, and _z_-axis, we have to write a byte of data to a specific register in the LSM303D. First of all, you need to find the address of the LSM303D, which you can find through **I2C.scan()**. Once you have that, if you look through the datasheet you will see the register **CTRL1**, which has the address 20 <sub>16</sub> (or 32 <sub>10</sub>). Let's set the data rate (out of power down mode), change the update mode, and enable the _x_-, _y_- and _z_-accelerometers. This equates to 00101111 <sub>2</sub> or 47 <sub>10</sub>. A short delay allows the accelerometer to start up.
 
@@ -722,7 +720,7 @@ The accelerometer data is stored in 16-bit 2's complement format in registers 40
 
 ![047_03](/images/047_03.png)
 
-![047_02](/images/047_02.png)
+
 
 We can then read the different axis readings using **get_axis()** with the starting registers (in decimal). We have used the LED (light-emitting diode) on the wireless board to indicate whether things are going well or not and, if not, exit the operation.
 
@@ -731,14 +729,13 @@ ___
 
 **PRO _TIP_**
 
-**The LSM303D is really sensitive, so you will see a bit of movement on the** _x_**- and** _z_**-readings all of the time. More importantly, you will see a constant reading of 9.8 metres per second per second on the** _y_**-axis (if you have the sensor oriented properly). This is because of gravity. You might like to explore the adjustments you can make to the LSM303D to alter the sensitivity—these can be found in the datasheet.**
+**The LSM303D is really sensitive, so you will see a bit of movement on the** _x_**- and** _z_**-readings all of the time. More importantly, you will see a constant reading of 9.8 metres per second per second on the** _y_**-axis (if you have the sensor oriented properly). This is because of gravity. You might like to explore the adjustments you can make to the LSM303D to alter the sensitivity. These can be found in the datasheet.**
 ____
 
 ### 2
 
-To move away from the background acceleration we will record only changes in acceleration. We can do this by storing the previous reading in an "old" variable, calculating the difference, and then moving the "new" readings into the "old" variables ready for next time. Of course, you have to ensure you skip this process for the first reading as you have no "old" readings to use. This is what is known as an edge case— something that only occurs at the extremes of the operating parameter (in this case, only on the first reading).
+To move away from the background acceleration we will record only changes in acceleration. We can do this by storing the previous reading in an "old" variable, calculating the difference, and then moving the "new" readings into the "old" variables ready for next time. Of course, you have to ensure you skip this process for the first reading as you have no "old" readings to use. This is what is known as an edge case -  something that only occurs at the extremes of the operating parameter (in this case, only on the first reading).
 
-![048_02](/images/048_02.png)
 
 At the same time, with 10 readings a second there is very quickly a need to be able to tell **when** a change happened. For this we will count up in minutes, seconds, and tenths of seconds to give a useful time point. If you are taking readings over extended periods you could of course use the same method to count hours or even days.
 
@@ -764,7 +761,7 @@ ___
 **Our method is to create a new data file every time the Pico turns on. This of course destroys the old file, so if you want to keep your data it might be worth creating an algorithm to back up or rename the existing file first. Of course, you could open in append mode, but this would make it harder to differentiate between readings.**
 ____
 
-![050_03](/images/050_03.png)
+
 
 ### 4
 
@@ -786,22 +783,22 @@ Things then get a little more complex! The Pico WiFi library has a handy "routes
 
 Let's talk through the code.
 
-- A start time is used for timeouts (for the requests—we assume the transfer may run over this).
+- A start time is used for timeouts (for the requestsï¿½we assume the transfer may run over this).
 - A client socket is created and verified.
 - The request itself is checked; this provides a lot of useful information, although we just want to check if the/data url is being requested so we don't worry about anything else.
 - The correct HTTP header, code 200, is sent.
 - At this point, if the data is small, we could just send it all. However, the file size will quickly exceed the memory of the Pico so we read, and send, a single line at a time, followed by a **client_stop** to clear the request. This can take some time, so we have included a (commented out) debug line to tell us what line of data is being sent.
 - Any requests other than/data get a 501 not implemented error.
 
-You can now create a notebook in Jupyter on your computer (as long as it is on the same WiFi network as your Pico) and load in the CSV file using **data= pd.read_csv("<http://192.168.1.157/data.csv>") #Get the live data**—where the IP address shown is that of your Pico, of course.
+You can now create a notebook in Jupyter on your computer (as long as it is on the same WiFi network as your Pico) and load in the CSV file using **data= pd.read_csv("<http://192.168.1.157/data.csv>") #Get the live data**ï¿½where the IP address shown is that of your Pico, of course.
 
 ### 5
 
-Identifying the flushes in Jupyter Notebook is relatively simple, although you may need to use a bit of trial and error. We used three libraries: pandas and matplotlib, as we've used before, and NumPy (imported as **np**). NumPy is a package for scientific computing, it provides many routines for all sorts of scientific mathematics—we will use it for some list DataFrame modification. It may also be worth saving a "good" set of data (or using ours) for testing purposes to save pulling data from the Pico all of the time.
+Identifying the flushes in Jupyter Notebook is relatively simple, although you may need to use a bit of trial and error. We used three libraries: pandas and matplotlib, as we've used before, and NumPy (imported as **np**). NumPy is a package for scientific computing, it provides many routines for all sorts of scientific mathematicsï¿½we will use it for some list DataFrame modification. It may also be worth saving a "good" set of data (or using ours) for testing purposes to save pulling data from the Pico all of the time.
 
 ![053_01](/images/053_01.png)
 
-If you plot any of the X, Y, or Z fields, or all of the data, you will hopefully see some patterns. All of ours showed a significant jump of approximately 300 timepoints around when the flush was made. There are some anomalies, which is only to be expected with real sensors—we had a jump at around about the 950 timepoint which could have been anything from a door shutting to a pipe vibrating. What we need to do is extract the "flush" data as a "detection" and ignore the rest. This is a common practice, as many signals suffer from noise, whether it's a mobile-phone tower interfering with satellite signals, or in this case everyday movements of the air/passing traffic, etc., interfering with our accelerometer readings.
+If you plot any of the X, Y, or Z fields, or all of the data, you will hopefully see some patterns. All of ours showed a significant jump of approximately 300 timepoints around when the flush was made. There are some anomalies, which is only to be expected with real sensorsï¿½we had a jump at around about the 950 timepoint which could have been anything from a door shutting to a pipe vibrating. What we need to do is extract the "flush" data as a "detection" and ignore the rest. This is a common practice, as many signals suffer from noise, whether it's a mobile-phone tower interfering with satellite signals, or in this case everyday movements of the air/passing traffic, etc., interfering with our accelerometer readings.
 
 To do this we can add an "Average" series to the data set, which works out a mean of the X, Y, and Z numeric columns. Plotting this shows a slightly more usable plot. We can then use NumPy to add a Boolean flag, **AboveThreshold**, which will put a 1 for whenever we **think** an acceleration (or vibration) is from a flush due to its severity and a 0 when it is not. By looking at our plots, we chose 0.005 as the threshold. The code looks like this: **data['AboveThreshold'] = np.where(data['Average'] > THRESHOLD,1,0)**
 
@@ -838,7 +835,7 @@ ____
 
 This book has spent a significant amount of time discussing monitoring waste; another way of taking more care of our planet is to do things better in the first place. Part of this is measuring and recording the efficiency of things, whether it's the air resistance of the latest fighter jet or the efficiency of a new battery-powered car engine. Innovative methods can feed into a better, more productive, and ultimately more ecologically-friendly industry, supporting Global Goal 9.
 
-Microcontrollers are particularly good for monitoring and measuring systems as they are incredibly small, light, and low powered and therefore have a minimal impact upon devices they are attached to. In this project we will be attempting to monitor and record the drop of a parachute using a time-of-flight sensor. We will take you through the Computer Science aspects of the system—the physics is a bit trickier so you may need to spend a bit more time applying the data to the models. Time-of-flight sensors can be used to measure air resistances in projects such as this, physical growth rates, accurate distances between objects, and a whole host of other uses which can aid industry in streamlining and improving manufacturing technology.
+Microcontrollers are particularly good for monitoring and measuring systems as they are incredibly small, light, and low powered and therefore have a minimal impact upon devices they are attached to. In this project we will be attempting to monitor and record the drop of a parachute using a time-of-flight sensor. We will take you through the Computer Science aspects of the systemï¿½the physics is a bit trickier so you may need to spend a bit more time applying the data to the models. Time-of-flight sensors can be used to measure air resistances in projects such as this, physical growth rates, accurate distances between objects, and a whole host of other uses which can aid industry in streamlining and improving manufacturing technology.
 
 ## Success criteria
 
@@ -850,13 +847,13 @@ Microcontrollers are particularly good for monitoring and measuring systems as t
 
 ### 1
 
-This project makes use of the VL53L1X—a time-of-flight sensor. The flight being measured isn't the device flying through the air, but rather the time it takes a low-powered laser to fly to an object and back again, allowing a very effective and accurate distance measurement. There is a powerful and simple-to-use library for the VL53L1X. Unfortunately, it is not currently possible to install it on the Pico. Thankfully, a British engineer, Lee Halls, has cloned and modified part of the library, which we have modified slightly and made available as **vl53l1x.py** on the GitHub repository. You will need to copy this to your Pico.
+This project makes use of the VL53L1Xï¿½a time-of-flight sensor. The flight being measured isn't the device flying through the air, but rather the time it takes a low-powered laser to fly to an object and back again, allowing a very effective and accurate distance measurement. There is a powerful and simple-to-use library for the VL53L1X. Unfortunately, it is not currently possible to install it on the Pico. Thankfully, a British engineer, Lee Halls, has cloned and modified part of the library, which we have modified slightly and made available as **vl53l1x.py** on the GitHub repository. You will need to copy this to your Pico.
 
 ![057_01](/images/057_01.png)
 
 The sample code in **ToF_Test** will ensure the sensor is working. You can plug it into the breakout in the Explorer for testing for now if you wish, although we soldered headers to it (coming out of the back) for connection to the expander we will be using later. Once the sensor is running, **.read()** can be used very simply to measure the distance in millimeters.
 
-![057_02](/images/057_02.png)
+
 ___
 
 **PRO _TIP_**
@@ -866,7 +863,7 @@ ____
 
 ### 2
 
-The wireless pack has a button on it, although the documentation is a little bit lacking. We're going to want to use it to start recording (since the device will be detethered from the computer). The button is connected to GPIO pin 12, so we can enable it with the code **button=machine.Pin(12,machine.Pin.IN,machine.Pin.PULL_UP)**. **PULL_UP** attaches an internal resistor which means the button reads "1" until it is pressed (at which point it will read 0). In the main loop, you can test **button.value** and if it is False, deal with it, initially by turning the LED (light-emitting diode) blue. As the device is going to be run detethered and the sensor wires have a tendency to fall out, we also wrapped the whole main **while** loop in a **try...except...** construct so if something does go wrong, the LED will blink red slowly. This is known as exception handling— an exception is an error. Python tries something which might go wrong—if an exception occurs then the code in the **except** block is executed. The alternative is that the program would have crashed, so predicting potential errors and dealing with them elegantly lets us have far more reliable and stable programs. This is important in all programs, but in microcontrollers where we may not have an easy-to-see output and/or may not be able to re-set the device easily, it is even more essential.
+The wireless pack has a button on it, although the documentation is a little bit lacking. We're going to want to use it to start recording (since the device will be detethered from the computer). The button is connected to GPIO pin 12, so we can enable it with the code **button=machine.Pin(12,machine.Pin.IN,machine.Pin.PULL_UP)**. **PULL_UP** attaches an internal resistor which means the button reads "1" until it is pressed (at which point it will read 0). In the main loop, you can test **button.value** and if it is False, deal with it, initially by turning the LED (light-emitting diode) blue. As the device is going to be run detethered and the sensor wires have a tendency to fall out, we also wrapped the whole main **while** loop in a **try...except...** construct so if something does go wrong, the LED will blink red slowly. This is known as exception handlingï¿½ an exception is an error. Python tries something which might go wrongï¿½if an exception occurs then the code in the **except** block is executed. The alternative is that the program would have crashed, so predicting potential errors and dealing with them elegantly lets us have far more reliable and stable programs. This is important in all programs, but in microcontrollers where we may not have an easy-to-see output and/or may not be able to re-set the device easily, it is even more essential.
 ___
 
 **PRO _TIP_**
@@ -890,7 +887,7 @@ In the previous module, the data file was overwritten every time the Pico was tu
 
 ### 5
 
-We have already done a lot of the work in preparing to run detethered. We know we can rename the file **main.py** on the Pico so that it will run automatically. We have wrapped the whole loop inside a **try…except** loop and included error codes (as colors/flashes) so we know what is happening. We have triggered the change in state from the button on the wireless pack and stored to the MicroSD card.
+We have already done a lot of the work in preparing to run detethered. We know we can rename the file **main.py** on the Pico so that it will run automatically. We have wrapped the whole loop inside a **tryï¿½except** loop and included error codes (as colors/flashes) so we know what is happening. We have triggered the change in state from the button on the wireless pack and stored to the MicroSD card.
 
 ![059_02](/images/059_02.png)
 
@@ -929,9 +926,9 @@ ____
 
 ## Setting the scene
 
-Security of data is an increasingly important consideration. In 2020 there were over 1 billion personal records compromised in the U.S. alone through username/password attacks—an increase of 450% over the year before. In the U.K. in the first half of 2020 the staggering amount of nearly 4 billion records were breached through 815 data attacks. There are numerous ways of protecting data, from secure passwords to encryption and air gaps, but the most often overlooked type of attack is the physical attack on a system, and within this the most prevalent is an attack caused by an unaccounted visitor. Innovative ways of solving problems such as this are what drives new industry and expanding infrastructure and links with Global Goal 9.
+Security of data is an increasingly important consideration. In 2020 there were over 1 billion personal records compromised in the U.S. alone through username/password attacksï¿½an increase of 450% over the year before. In the U.K. in the first half of 2020 the staggering amount of nearly 4 billion records were breached through 815 data attacks. There are numerous ways of protecting data, from secure passwords to encryption and air gaps, but the most often overlooked type of attack is the physical attack on a system, and within this the most prevalent is an attack caused by an unaccounted visitor. Innovative ways of solving problems such as this are what drives new industry and expanding infrastructure and links with Global Goal 9.
 
-In this project you will explore some new hardware, the HuskyLens, to use Artificial Intelligence (AI) to carry out facial recognition of new visitors (this could be to your front door, or even your bedroom, depending on where you keep your most important data). You will also be introduced to the _IFTTT_—if this then that—concept, which will enable notifications on your mobile phone.
+In this project you will explore some new hardware, the HuskyLens, to use Artificial Intelligence (AI) to carry out facial recognition of new visitors (this could be to your front door, or even your bedroom, depending on where you keep your most important data). You will also be introduced to the _IFTTT_ï¿½if this then thatï¿½concept, which will enable notifications on your mobile phone.
 
 ## Success criteria
 
@@ -942,13 +939,13 @@ In this project you will explore some new hardware, the HuskyLens, to use Artifi
 
 ### 1
 
-This project makes use of a HuskyLens—a remarkable piece of equipment which can, out of the box, conduct a number of image recognitions including faces, objects, colors, and line following. When you open your HuskyLens the first thing you should do is update the firmware as the chances are it is not on the latest version. The HuskyLens wiki document has links to everything you need—in Windows you:
+This project makes use of a HuskyLensï¿½a remarkable piece of equipment which can, out of the box, conduct a number of image recognitions including faces, objects, colors, and line following. When you open your HuskyLens the first thing you should do is update the firmware as the chances are it is not on the latest version. The HuskyLens wiki document has links to everything you needï¿½in Windows you:
 
 - download the latest firmware;
 - download and install a USB to UART driver so your computer can communicate with the lens; and
 - download the K-Flash software and use it to install the firmware on the HuskyLens.
 
-The process takes 5–10 minutes and only has to be done once. It is much easier on a Windows computer than a Mac or Linux computer, so as a one-off it may be worth borrowing a friend's computer for the process or exploring the use of a Windows Virtual Machine. It is possible with a Mac as well, so if you don't have access to a Windows computer you will get through with perseverance.
+The process takes 5ï¿½10 minutes and only has to be done once. It is much easier on a Windows computer than a Mac or Linux computer, so as a one-off it may be worth borrowing a friend's computer for the process or exploring the use of a Windows Virtual Machine. It is possible with a Mac as well, so if you don't have access to a Windows computer you will get through with perseverance.
 
 Once we have the HuskyLens updated we have two things to do: we need to train it to recognize a face, and we need to have it tell Python that it has done so. To connect the HuskyLens to the Pico we are again using the dual expander as we will be using the wireless adaptor later on. The HuskyLens comes with a 4-pin wire, so plug it in and connect the wires to the expander:
 
@@ -969,7 +966,7 @@ ____
 
 ### 2
 
-Now that we know the HuskyLens is working it is time to get it set up for our project. Forget the image you have learned (or perform a factory reset). You need to enter "multiple" mode, so long press the **selection** button—it will flick through **Face Recognition** and go to **Learn Multiple**. Press again to select, and rotate so the slider turns blue and moves to the right. Press once more, rotate to save and return, and press to exit. Now you are in multiple mode, point toward the first face you want to learn (we used Stephen Fry again) and long press the **Learn** button. When learned, press again and long press over another face (we used Hugh Laurie's photo this time). If you are creating a security system for your bedroom, learning your family's faces might be a good idea!
+Now that we know the HuskyLens is working it is time to get it set up for our project. Forget the image you have learned (or perform a factory reset). You need to enter "multiple" mode, so long press the **selection** buttonï¿½it will flick through **Face Recognition** and go to **Learn Multiple**. Press again to select, and rotate so the slider turns blue and moves to the right. Press once more, rotate to save and return, and press to exit. Now you are in multiple mode, point toward the first face you want to learn (we used Stephen Fry again) and long press the **Learn** button. When learned, press again and long press over another face (we used Hugh Laurie's photo this time). If you are creating a security system for your bedroom, learning your family's faces might be a good idea!
 
 When you hover over a known face, a colored box and ID number should show up. When you hover over an unknown face (we used a picture of Rowan Atkinson as a control), a gray box, and no ID number will show.
 
@@ -991,7 +988,7 @@ Once this is working, we can see about getting some useful information from the 
 
 ![064_02](/images/064_02.png)
 
-![064_03](/images/064_03.png)
+
 
 ### 4
 
@@ -1029,10 +1026,10 @@ AI is not an exact science. Testing with printed out images is very helpful, but
 
 **Stretch tasks**
 
-- The "dealing with problems" algorithm—not saving a photo if a known face is seen within five seconds—is quite rough and ready. Develop your own algorithm and test it with family members. You should also decide what to do should there be multiple faces in view at once.
+- The "dealing with problems" algorithmï¿½not saving a photo if a known face is seen within five secondsï¿½is quite rough and ready. Develop your own algorithm and test it with family members. You should also decide what to do should there be multiple faces in view at once.
 - The IFTTT protocol allows you to include a payload in the notification. Include a timestamp and more descriptive message.
 - Explore the HuskyLens library file: there is a command to instruct the lens to learn a new face. Program the HuskyLens to learn a new face when the button on the wireless board is pressed.
-- Log all data—known and unknown faces, photos saved, notifications sent, etc. to the SD card within the wireless board (unfortunately the one on the HuskyLens can't be accessed or read without putting into a computer). Put the data into Jupyter Notebook to analyze and identify key times that unknown visitors were detected.
+- Log all dataï¿½known and unknown faces, photos saved, notifications sent, etc. to the SD card within the wireless board (unfortunately the one on the HuskyLens can't be accessed or read without putting into a computer). Put the data into Jupyter Notebook to analyze and identify key times that unknown visitors were detected.
 
 **Final thoughts**
 
