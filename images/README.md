@@ -1,1 +1,1 @@
-# This directory contains the images linked to the Markdown version of the book on GitHub.
+# This directory contains images linked to the Markdown version of the book on GitHub.
