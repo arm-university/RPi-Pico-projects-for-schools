@@ -3,7 +3,7 @@
 
 Arm Education Media is an imprint of Arm Limited, 110 Fulbourn Road, Cambridge, CBI 9NJ, UK
 
-Copyright � 2022 Arm Limited (or its affiliates). All rights reserved.
+Copyright 2022 Arm Limited (or its affiliates). All rights reserved.
 
 No part of this publication may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording or any other information storage and retrieval system, without permission in writing from the publisher, except under the following conditions:
 
@@ -22,7 +22,7 @@ Readers must always rely on their own experience and knowledge in evaluating and
 
 To the fullest extent permitted by law, the publisher and the authors, contributors, and editors shall not have any responsibility or liability for any losses, liabilities, claims, damages, costs or expenses resulting from or suffered in connection with the use of the information and materials set out in this textbook.
 
-Such information and materials are protected by intellectual property rights around the world and are copyright � Arm Limited (or its affiliates). All rights are reserved. Any source code, models or other materials set out in this reference book should only be used for non-commercial, educational purposes (and/or subject to the terms of any license that is specified or otherwise provided by Arm). In no event shall purchasing this textbook be construed as granting a license to use any other Arm technology or know-how.
+Such information and materials are protected by intellectual property rights around the world and are copyright Arm Limited (or its affiliates). All rights are reserved. Any source code, models or other materials set out in this reference book should only be used for non-commercial, educational purposes (and/or subject to the terms of any license that is specified or otherwise provided by Arm). In no event shall purchasing this textbook be construed as granting a license to use any other Arm technology or know-how.
 
 The Arm corporate logo and words marked with <sup>�</sup> or � are registered trademarks or trademarks of Arm Limited (or its affiliates) in the US and/or elsewhere. All rights reserved. Other brands and names mentioned in this document may be the trademarks of their respective owners. For more information about Arm's trademarks, please visit **<https://www.arm.com/company/policies/trademarks>**.
 
@@ -52,7 +52,7 @@ Learners will also explore some Artificial Intelligence and Machine Learning tec
 
 ## Understanding the Raspberry Pi Pico
 
-Learners often see microcontrollers such as the Pico as delicate, confusing, and scary. While there are elements of delicacy to the Pico, such as the pins being easy to bend, learners should be encouraged not to fear it. It helps to think about the Pico�and any microcontroller�simply as a small computer: all it does is take inputs, calculate the right thing to do, and produce some outputs.
+Learners often see microcontrollers such as the Pico as delicate, confusing, and scary. While there are elements of delicacy to the Pico, such as the pins being easy to bend, learners should be encouraged not to fear it. It helps to think about the Pico, and any microcontroller, simply as a small computer: all it does is take inputs, calculate the right thing to do, and produce some outputs.
 
 The fact that we use sensors instead of keyboards and mice, and we use LEDs and motors rather than a screen, should not detract from this. Sometimes these inputs will come from external sources such as the HuskyLens and sometimes the storage will be remote, but learners will be walked through this in accessible steps.
 
