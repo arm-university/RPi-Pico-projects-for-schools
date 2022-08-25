@@ -24,7 +24,7 @@ To the fullest extent permitted by law, the publisher and the authors, contribut
 
 Such information and materials are protected by intellectual property rights around the world and are copyright Arm Limited (or its affiliates). All rights are reserved. Any source code, models or other materials set out in this reference book should only be used for non-commercial, educational purposes (and/or subject to the terms of any license that is specified or otherwise provided by Arm). In no event shall purchasing this textbook be construed as granting a license to use any other Arm technology or know-how.
 
-The Arm corporate logo and words marked with <sup>�</sup> or � are registered trademarks or trademarks of Arm Limited (or its affiliates) in the US and/or elsewhere. All rights reserved. Other brands and names mentioned in this document may be the trademarks of their respective owners. For more information about Arm's trademarks, please visit **<https://www.arm.com/company/policies/trademarks>**.
+The Arm corporate logo and words marked with &reg; or &trade; are registered trademarks or trademarks of Arm Limited (or its affiliates) in the US and/or elsewhere. All rights reserved. Other brands and names mentioned in this document may be the trademarks of their respective owners. For more information about Arm's trademarks, please visit **<https://www.arm.com/company/policies/trademarks>**.
 
 Arm is committed to making the language we use inclusive, meaningful, and respectful. Our goal is to remove and replace non-inclusive language from our vocabulary to reflect our values and represent our global ecosystem.
 
