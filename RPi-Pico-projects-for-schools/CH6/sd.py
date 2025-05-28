@@ -274,4 +274,4 @@ class SDCard:
 
     def ioctl(self, op, arg):
         if op == 4:  # get number of blocks
-            return self.sectors.py
+            return self.sectors

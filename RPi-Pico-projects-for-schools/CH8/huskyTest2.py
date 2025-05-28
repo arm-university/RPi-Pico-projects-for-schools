@@ -3,6 +3,7 @@ import time
 
 husky = HuskyLensLibrary("I2C") #Create the HuskyLens object as I2C 
 
+
 #Deal with detected faces
 def faceDetected(faceId):
     if faceId == 0: #Face 0 is unknown
