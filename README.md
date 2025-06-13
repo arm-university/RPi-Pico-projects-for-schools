@@ -1,6 +1,8 @@
 # RPi-Pico-projects-for-schools
 
-## [Download here](https://github.com/arm-university/Rpi-Pico-projects-for-schools/archive/refs/heads/main.zip)
+## Important
+### To download the latest stable version, please click below instead of using the "Download ZIP" button.
+### [Click here to download](https://github.com/arm-university/RPi-Pico-projects-for-schools/releases/download/v.1.0.0/RPi-Pico-projects-for-schools-main.3.zip)
 
 ## Resource Aim
 This book guides learners through a range of projects, contextualised by cutting-edge themes including Machine Learning and Internet of Things. All projects are based on the Raspberry Pi Pico board, a cheap yet powerful device, which can be programmed in Python. 
